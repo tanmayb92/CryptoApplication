@@ -1,6 +1,5 @@
 package com.cryptoapp.portfolio.dto;
 
-
 import java.util.List;
 
 import javax.persistence.Entity;
@@ -9,27 +8,26 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
-
 @Entity
 public class User {
 
 	@Id
 	@GeneratedValue
 	private Long id;
-	
+
 	private String firstName;
-	
+
 	private String lastName;
-	
+
 	private String gender;
-	
+
 	private String email;
-	
+
 	private String phoneNumber;
-	
+
 	@OneToMany(mappedBy = "user")
 	private List<Portfolio> portfolios;
-	
+
 	public User() {
 		// TODO Auto-generated constructor stub
 	}
@@ -81,7 +79,7 @@ public class User {
 	public void setPhoneNumber(String phoneNumber) {
 		this.phoneNumber = phoneNumber;
 	}
-    
+
 	public List<Portfolio> getPortfolios() {
 		return portfolios;
 	}
@@ -92,11 +90,8 @@ public class User {
 
 	@Override
 	public String toString() {
-		return "User [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", "
-				+ " gender=" + gender + ", email=" + email + ", phoneNumber=" + phoneNumber + "]";
+		return "User [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", " + " gender=" + gender
+				+ ", email=" + email + ", phoneNumber=" + phoneNumber + "]";
 	}
-	
-	
-	
-	
+
 }
