@@ -14,4 +14,5 @@ public class AppExceptionHandler {
 	public ResponseEntity<Object> handleNoElementException() {
 		return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 	}
+	
 }

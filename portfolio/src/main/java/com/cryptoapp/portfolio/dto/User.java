@@ -32,6 +32,15 @@ public class User {
 		// TODO Auto-generated constructor stub
 	}
 
+	public User(String firstName, String lastName, String gender, String email, String phoneNumber) {
+		super();
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.gender = gender;
+		this.email = email;
+		this.phoneNumber = phoneNumber;
+	}
+
 	public Long getId() {
 		return id;
 	}
