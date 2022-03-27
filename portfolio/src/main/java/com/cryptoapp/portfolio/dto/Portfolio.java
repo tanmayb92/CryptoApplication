@@ -77,4 +77,11 @@ public class Portfolio  extends RepresentationModel<Portfolio>{
 		this.user = user;
 	}
 
+	@Override
+	public String toString() {
+		return "Portfolio [id=" + id + ", portfolioName=" + portfolioName + ", creationDate=" + creationDate
+				+ ", purchaseEntry=" + purchaseEntry + "]";
+	}
+
+	 
 }
